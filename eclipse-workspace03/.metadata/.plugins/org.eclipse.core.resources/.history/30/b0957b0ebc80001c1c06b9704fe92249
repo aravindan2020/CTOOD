@@ -1,0 +1,18 @@
+package project2;
+
+import java.util.Scanner;
+
+public class name {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in); 
+		int a=in.nextInt();
+		in.nextLine();
+        String name = in.nextLine();  
+        String name1 = in.nextLine();
+        System.out.println("Name is: " + name); 
+        System.out.println("Name is: " + name1);
+        in.close();             
+        }
+
+	}

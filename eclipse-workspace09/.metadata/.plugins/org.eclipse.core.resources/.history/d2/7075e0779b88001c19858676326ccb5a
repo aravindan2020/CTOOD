@@ -1,0 +1,12 @@
+package p2;
+
+public class innerclass {
+
+	public static void main(String[] args) {
+		Outer ob=new Outer();
+		//creating object for inner class
+		Outer.inner in=ob.new inner();
+		in.msg(12);
+	}
+
+}

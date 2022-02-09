@@ -1,0 +1,29 @@
+package constructor1;
+
+public class construct {
+	//constructor overloading
+	construct()//default constructor
+	{
+	System.out.println("this is the constructor block");	
+	}
+	construct(int a) //parameterized constructor
+	{
+		System.out.println("this is the parameterized constructor  "+a);
+	}
+	construct(int a,int b) //parameterized constructor
+	{
+		System.out.printf("this is the parameterized constructor %d and %d",a,b);
+	}
+	
+
+	public static void main(String[] args) {
+		construct s1=new construct(5);
+		construct s=new construct();
+		construct s2=new construct(4,6);
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package cmd;
+
+public class cmdline {
+//command line arguments
+	/*
+	 * there 4 kinds of inputs
+	 * 1.using buffered reader
+	 * 2.using scanner 
+	 * 3.command line argument
+	 * 4.file concept 
+	 */
+	public static void main(String[] a) {
+		int b=Integer.parseInt(a[0]);
+		System.out.println(b);
+		
+		// a[0] is a string
+		
+
+	}
+
+}

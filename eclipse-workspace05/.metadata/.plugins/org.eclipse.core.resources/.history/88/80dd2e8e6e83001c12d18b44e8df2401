@@ -1,0 +1,16 @@
+package p2;
+
+public class Thisdemo {
+	int a,b;
+	Thisdemo(int a,int b)
+	{
+		x=a;
+		y=b;
+	}
+	void display()
+	{
+		System.out.println(x);
+		System.out.println(y);
+	}
+
+}

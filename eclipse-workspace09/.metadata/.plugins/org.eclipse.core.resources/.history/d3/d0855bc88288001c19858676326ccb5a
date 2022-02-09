@@ -1,0 +1,19 @@
+package p1;
+
+import java.util.Scanner;
+
+public class ShapeDimDemo {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		ShapeDim c=new ShapeDim();
+		c.findArea(sc.nextDouble());
+		c.findArea(sc.nextInt());
+		c.findArea(sc.nextFloat(),sc.nextFloat());
+		c.findArea(sc.nextDouble(),sc.nextDouble());
+		System.out.println(c);
+		sc.close();
+
+	}
+
+}

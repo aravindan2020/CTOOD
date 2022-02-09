@@ -1,0 +1,19 @@
+package project2;
+import java.util.Scanner;
+
+public class Cuboid {
+	private static int r,l,b,h;	
+	public static void Calc()
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter l value");
+		l=s.nextInt();
+		System.out.println("enter b value");
+		b=s.nextInt();
+		System.out.println("enter h value");
+		h=s.nextInt();
+		r=l*b*h;
+		System.out.println("this is the static method");
+		System.out.println(r);
+	}
+}

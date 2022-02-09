@@ -1,0 +1,9 @@
+package project2;
+
+public class cube1 {
+
+	public static void main(String[] args) {
+		Cuboid.Calc();
+	}
+
+}

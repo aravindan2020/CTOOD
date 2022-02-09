@@ -1,0 +1,44 @@
+package constructor1;
+
+public class construct {
+	construct()
+	{
+	this(5);// call the construct(int a)
+	System.out.println("this is the constructor block");
+	
+	}
+	construct(int a) 
+	{
+		this(56.75);//call-construct(double a)
+		System.out.println("this is the parameterized constructor  "+a);
+	}
+	construct(double a) 
+	{
+		this(3,4);//call-construct(int a,int b)
+		System.out.println("this is the parameterized constructor  "+a);
+	}
+	
+	construct(int a,int b) 
+	{
+		System.out.printf("this is the parameterized constructor %d and %d\n",a,b);
+	}
+	
+	void m1()
+	{
+		System.out.println("method 1");
+	}
+	void m1(String dept)
+	{
+		System.out.println("my department is "+dept);
+	}
+	void m1(char s)
+	{
+		System.out.println("character is "+s);
+	}
+	
+
+	public static void main(String[] args) {
+		construct s=new construct();
+		
+	}
+}

@@ -1,0 +1,12 @@
+package pro4;
+import project2.Cuboid;
+
+public class cube {
+
+	public static void main(String[] args) {
+		Cuboid.Calc();
+		// TODO Auto-generated method stub
+
+	}
+
+}

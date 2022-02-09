@@ -1,0 +1,22 @@
+package project2;
+
+public class Cuboid {
+	private static int l=10;
+	private static int b=11;
+	private static int r,h=12;
+	private static void Calc()
+	{
+		r=l*b*h; 
+		System.out.println("this is the static method");
+	}
+
+	public static void main(String[] args) {
+		Calc();
+		System.out.println(r);
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

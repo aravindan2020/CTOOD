@@ -1,0 +1,54 @@
+package constructor1;
+
+public class getset {
+	private int l,b,h;
+	
+	String getLength()
+	{
+		return B+"M";
+	}
+	void setLength(int l)
+	{
+		this.l=l;
+		
+	}
+	String getBreadth()
+	{
+		return b+"M";
+	}
+	void setBreadth(int b)
+	{
+		this.b=b;
+		
+	}
+	String getHeight()
+	{
+		return h+"M";
+	}
+	void setHeight(int h)
+	{
+		this.h=h;
+		
+	}
+	String FindVolume(int l,int b,int h)
+	{
+		return l*b*h +"Cu.M";
+	}
+	public String toString()
+	{
+		String b=String.format("Length=%s,Breath=%s,Height=%s,the total is %s",getLength(),getBreadth(),getHeight());
+		return b;
+	}
+	
+
+	public static void main(String[] args) {
+		getset g=new getset();
+		g.setLength(3);
+		g.setBreadth(4);
+		g.setHeight(5);
+		System.out.println(g);
+		
+
+	}
+
+}

@@ -1,0 +1,51 @@
+package p2;
+
+public class getset {
+private int l,b,h;
+	
+	void setLength(int l)
+	{
+		this.l=l;
+		
+	}	
+	String getLength()
+	{
+		return l+"M";
+	}
+	void setBreadth(int b)
+	{
+		this.b=b;
+		
+	}	
+	String getBreadth()
+	{
+		return b+"M";
+	}
+	void setHeight(int h)
+	{
+		this.h=h;
+		
+	}
+	String getHeight()
+	{
+		return h+"M";
+	}
+	
+	String FindVolume()
+	{
+		return l*b*h +"Cu.M";
+	}
+	public String toString()
+	{
+		String b=String.format("Length=%s\n,Breath=%s\n,Height=%s\n,the total is %s",getLength(),getBreadth(),getHeight(),FindVolume());
+		return b;
+	}
+	public static void main(String[] args) {
+		getset g=new getset();
+		g.setLength(3);
+		g.setBreadth(4);
+		g.setHeight(5);
+		System.out.println(g);
+	}
+
+}

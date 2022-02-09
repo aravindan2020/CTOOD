@@ -1,0 +1,10 @@
+package p2;
+
+public class getset1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

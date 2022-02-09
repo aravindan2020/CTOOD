@@ -1,0 +1,33 @@
+package constructor1;
+
+public class getset {
+	private int a;
+	
+	int geta()
+	{
+		return a;
+	}
+	void seta(int a)
+	{
+		this.a=a;
+		
+	}
+	int Display()
+	{
+		return 100;
+	}
+	public String toString()
+	{
+		String b=String.format("the value of a  is %d\n %d",geta(),Display());
+	}
+	
+
+	public static void main(String[] args) {
+		getset g=new getset();
+		g.seta(4);
+		System.out.println(g);
+		
+
+	}
+
+}

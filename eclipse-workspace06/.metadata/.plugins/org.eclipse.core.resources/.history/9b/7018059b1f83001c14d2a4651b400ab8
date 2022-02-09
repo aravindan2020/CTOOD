@@ -1,0 +1,16 @@
+package cmd;
+
+public class WrapperExample1 {
+
+	public static void main(String[] args) {
+		int a=10;
+		Integer b=a;//autoboxing
+		// Integer is a class
+		// b is object
+		// so b is the reference of a
+		System.out.println(b);
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package project3;
+import project2.*;
+
+public class cube2 {
+
+	public static void main(String[] args) {
+		Cuboid.Calc();
+		// TODO Auto-generated method stub
+
+	}
+
+}

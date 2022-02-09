@@ -1,0 +1,17 @@
+package project2;
+
+public class Cuboid {
+	private static int r,l=10,b=11,h=12;   
+	public static void Calc()
+	{
+		r=l*b*h;
+		System.out.println("this is the static method");
+		System.out.println(r);
+	}
+	private static void Calc1()
+	{
+		r=l*b*h;
+		System.out.println("this is the static method");
+		System.out.println(r);
+	}
+}

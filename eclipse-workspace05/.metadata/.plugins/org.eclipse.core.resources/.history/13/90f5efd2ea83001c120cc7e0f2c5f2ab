@@ -1,0 +1,30 @@
+package p1;
+
+public class cons {
+	//default constructor
+	// without argument
+	cons()
+	{
+		System.out.println("this is constructor");
+	}
+	//parameterized constructor
+	cons(int a)
+	{
+		System.out.println(a);
+	}
+	void cons1()
+	{
+		System.out.println("this is the method");
+	}
+	
+	
+	public static void main(String[] args) {
+		cons c1 =new cons(5);//parameterized 
+		cons c=new cons();//default
+		c.cons1();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

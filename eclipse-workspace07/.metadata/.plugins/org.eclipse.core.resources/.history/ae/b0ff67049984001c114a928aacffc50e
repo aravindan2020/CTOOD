@@ -1,0 +1,16 @@
+package constructor1;
+
+public class construct {
+	construct(int a)//default constructor
+	{
+	System.out.println("this is the constructor block"+a);	
+	}
+	
+
+	public static void main(String[] args) {
+		construct s=new construct(5);
+		// TODO Auto-generated method stub
+
+	}
+
+}

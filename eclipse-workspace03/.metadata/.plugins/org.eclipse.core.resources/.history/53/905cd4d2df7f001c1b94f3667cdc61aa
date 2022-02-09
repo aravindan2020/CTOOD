@@ -1,0 +1,27 @@
+package project2;
+
+class Cuboid {
+	private static int r,l,b,h;
+		
+    static
+    {
+    	System.out.println("another block");
+    }
+    static
+    {
+    	l=10;
+    	b=11;
+    	h=12;
+    }
+	
+	private static void Calc()
+	{
+		r=l*b*h;
+		System.out.println("this is the static method");
+		System.out.println(r);
+	}
+	public static void main(String[] e) {
+		Calc();
+	}
+
+}

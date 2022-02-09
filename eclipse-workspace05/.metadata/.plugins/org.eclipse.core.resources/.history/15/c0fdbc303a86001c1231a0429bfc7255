@@ -1,0 +1,27 @@
+package p1;
+
+public class gett {
+	private String a,b;
+	
+	void seta(String a)
+	{
+		this.a=a;
+		
+	}
+	String geta()
+	{
+		return a +"for apple";
+	}
+	void setb(String b)
+	{
+		this.b=b;	
+	}
+	String getb()
+	{
+		return b+"for ball";
+	}
+	public void toString() 
+	{
+		String s=
+	}
+}

@@ -1,0 +1,16 @@
+package p1;
+
+public class cons {
+	
+	cons()
+	{
+		System.out.println("this is the constructor");
+	}
+
+	public static void main(String[] args) {
+		cons c=new cons();
+		// TODO Auto-generated method stub
+
+	}
+
+}

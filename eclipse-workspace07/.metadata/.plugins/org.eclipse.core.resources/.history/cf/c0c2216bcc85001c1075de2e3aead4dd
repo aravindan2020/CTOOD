@@ -1,0 +1,17 @@
+package constructor1;
+
+public class Outer {
+	
+
+	public static void main(String[] args) {
+		Inner p=new Inner()
+		{  
+		 private int data=30;
+		  void msg ()
+		   {
+		     System.out.println("data is "+data);   
+		  }  
+		 };  
+		  p.msg();  
+		 }  
+	}

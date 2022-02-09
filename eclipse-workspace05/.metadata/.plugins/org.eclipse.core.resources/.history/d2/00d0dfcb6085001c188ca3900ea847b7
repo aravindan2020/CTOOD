@@ -1,0 +1,43 @@
+package p1;
+
+public class cons {
+	//compile time polymorphism
+	//default constructor
+	// without argument
+	cons()
+	{
+		System.out.println("this is constructor");
+	}
+	//parameterized constructor
+	//constructor overridding
+	cons(int a)
+	{
+		System.out.println(a);
+	}
+	//constructor overloading
+	cons(double a)
+	{
+		System.out.println(a);
+	}
+	cons(String a,int b)
+	{
+		System.out.printf("%s and %d ",a,b);
+	}
+	void cons1()
+	{
+		System.out.println("this is the method");
+	}
+	
+	
+	public static void main(String[] args) {
+		cons c1=new cons();
+		cons c2=new cons(3.14);
+		cons c3=new cons("CSE",23);
+		cons c4=new cons(100);
+		//c.cons1();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

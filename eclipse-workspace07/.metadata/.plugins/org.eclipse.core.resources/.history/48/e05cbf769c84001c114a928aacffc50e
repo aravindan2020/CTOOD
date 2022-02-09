@@ -1,0 +1,52 @@
+package constructor1;
+
+public class construct {
+	//**************compile time polymorphism******************
+	// 2 concepts -->overloading and overriding
+	//overriding
+	construct(int a) //parameterized constructor
+	{
+		System.out.println("this is the parameterized constructor  "+a);
+	}
+	construct(double a) //parameterized constructor
+	{
+		System.out.println("this is the parameterized constructor  "+a);
+	}
+	//constructor overloading
+		construct()//default constructor
+		{
+		System.out.println("this is the constructor block");	
+		}
+	construct(int a,int b) //parameterized constructor
+	{
+		System.out.printf("this is the parameterized constructor %d and %d",a,b);
+	}
+	//method overloading
+	void m1()
+	{
+		System.out.println("mathod 1");
+	}
+	void m1(String dept)
+	{
+		System.out.println("my department is "+dept);
+	}
+	void m1(char s)
+	{
+		System.out.println("character is "+s);
+	}
+	
+
+	public static void main(String[] args) {
+		construct s1=new construct(5);
+		construct s=new construct();
+		construct s2=new construct(4,6);
+		s.m1();
+		s.m1("CSIT");
+		s.m1('B');
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
