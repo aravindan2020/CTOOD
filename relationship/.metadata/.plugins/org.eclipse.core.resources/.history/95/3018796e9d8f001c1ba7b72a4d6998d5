@@ -1,0 +1,18 @@
+package aggregation1;
+
+public class aggmain {
+
+	public static void main(String[] args) {
+		Adhar a2=new Adhar(564512348910l);
+		Mobilenumber m1=new Mobilenumber(987654321l,9786561111l);
+		Person p1=new Person("name1",m1,564512348910l);//adhar-composition
+		//m1-aggregation
+		p1=null;
+		System.out.println(m1);
+		//association
+		boolean x=a2.dob();
+	    boolean y=m1.electionid();
+		System.out.printf("%s and %s",x,y);
+	}
+
+}

@@ -1,0 +1,10 @@
+package inheritance2;
+
+public class A1 {
+	int a;
+	A1()
+	{
+		System.out.println("super class constructor");
+	}
+
+}

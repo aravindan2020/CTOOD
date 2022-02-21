@@ -1,0 +1,18 @@
+package aggregation1;
+
+public class Mobilenumber {
+	private long airtelno;
+	private long jiono;
+	public Mobilenumber(long airtelno, long jiono) {
+		this.airtelno = airtelno;
+		this.jiono = jiono;
+	}
+	@Override
+	public String toString() {
+		return "Mobilenumber [airtelno=" + airtelno + ", jiono=" + jiono + "]";
+	}
+	
+void mobilemethod() {
+	System.out.println("this is mobile method");
+}
+}

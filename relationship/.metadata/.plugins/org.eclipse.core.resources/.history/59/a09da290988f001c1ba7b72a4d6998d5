@@ -1,0 +1,14 @@
+package aggregation1;
+
+public class aggmain {
+
+	public static void main(String[] args) {
+		Mobilenumber m1=new Mobilenumber(987654321l,9786561111l);
+		Person p1=new Person("name1",m1,564512348910l);//adhar-composition
+		//m
+		System.out.println(p1);//composition
+		p1=null;
+		System.out.println(m1);
+	}
+
+}

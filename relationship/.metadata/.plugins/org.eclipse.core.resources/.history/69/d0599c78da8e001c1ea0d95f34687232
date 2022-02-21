@@ -1,0 +1,10 @@
+package aggregation1;
+
+public class aggmain {
+
+	public static void main(String[] args) {
+		Person p=new Person("name1",564512348910l);
+
+	}
+
+}

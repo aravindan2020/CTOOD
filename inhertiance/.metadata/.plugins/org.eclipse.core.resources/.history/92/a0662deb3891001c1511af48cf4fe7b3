@@ -1,0 +1,11 @@
+package ArrayList;
+
+import java.util.ArrayList;
+
+public class ArrylistDemo {
+	public static void main(String[] args) {
+		ArrayList<Student> a=new ArrayList<Student>();
+		a.add(new Student("name",12));
+
+}
+}

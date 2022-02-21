@@ -1,0 +1,22 @@
+package menu;
+
+import java.util.Scanner;
+public class StudentMain 
+{
+	public static void main(String[] args) 
+	{
+		int ch;
+		Student s[]=new Student[3];
+		Scanner sc=new Scanner(System.in);
+		boolean a=true;
+		while(a)
+		{
+			System.out.printf("1.Add student\n2.Search ID\n3.search Name\n4.Sort by Id\n5.Sort by total\n6.Update name based on ID\n7.others");
+			System.out.println("Enter your choice");
+			ch=sc.nextInt();
+			
+		}
+
+	}
+
+}

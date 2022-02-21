@@ -1,0 +1,10 @@
+package aggregation;
+
+public class Student {
+  private long id;
+  private String name;
+  private int mark;
+  private float cgpa;
+  private Address a;
+  
+}

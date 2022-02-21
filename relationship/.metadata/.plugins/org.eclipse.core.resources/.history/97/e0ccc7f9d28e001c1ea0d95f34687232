@@ -1,0 +1,21 @@
+package aggregation;
+
+public class Student {
+  private long id;
+  private String name;
+  private int mark;
+  private float cgpa;
+  private Address a;
+   Student(long id, String name, int mark, float cgpa) {
+	this.id = id;
+	this.name = name;
+	this.mark = mark;
+	this.cgpa = cgpa;
+	this.a = new Address(street,state,country,zip);
+}
+@Override
+public String toString() {
+	return "Student [id=" + id + ", name=" + name + ", mark=" + mark + ", cgpa=" + cgpa + ", a=" + a + "]";
+}
+ 
+}

@@ -1,0 +1,25 @@
+package menu;
+
+public class Student 
+{
+	String name;
+	long id;
+	int tm;
+	void addStudent(String name, long id,int tm)
+	{
+		this.name=name;
+		this.id=id;
+		this.tm=tm;
+	}
+	static boolean searchById(Student s[],int size,long n)
+	{
+		for(int i=0; i<size;i++)
+		{
+			if(s[size].id==n)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+}

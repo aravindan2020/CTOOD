@@ -1,0 +1,58 @@
+package menu;
+
+import java.util.Scanner;
+public class StudentMain 
+{
+	public static void main(String[] args) 
+	{
+		int ch,size=0,m;
+		String n;
+		long d;
+		Student s[]=new Student[3];
+		Scanner sc=new Scanner(System.in);
+		boolean a=true;
+		while(a)
+		{
+			System.out.printf("1.Add student\n2.Search ID\n3.search Name\n4.Sort by Id\n5.Sort by total\n6.Update name based on ID\n7.others");
+			System.out.println("Enter your choice");
+			ch=sc.nextInt();
+			switch(ch)
+			{
+			case 1: 
+					System.out.println("Ënter Student Details");
+					System.out.println("Enter name:");
+					n=sc.next();
+					System.out.println("Enter Student ID:");
+					d=sc.nextLong();
+					System.out.println("Ënter Student Tm");
+					m=sc.nextInt();
+					s[size].addStudent(n,d,m);
+					size++;
+					break;
+			case 2:
+					System.out.println("Enter id to search:");
+					d=sc.nextLong();
+					if(Student.searchById(s, size, d))
+						System.out.println("Found");
+					else
+						System.out.println("Not Found");
+					break;
+			case 3:
+					System.out.println("Enter name to Search:");
+					n=sc.next();
+					if(Student.searchByName(s, size, n))
+						System.out.println("Found");
+					else
+						System.out.println("Not Found");
+					break;
+			case 4:
+					Student.sortById(s, size);
+					break;
+					
+			}
+			sc.close();
+		}
+
+	}
+
+}

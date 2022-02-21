@@ -1,0 +1,7 @@
+package aggregation;
+
+public class Address {
+   private String street,state,country;
+   private long zip;
+   
+}

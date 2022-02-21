@@ -1,0 +1,13 @@
+package aggregation1;
+
+public class aggmain {
+
+	public static void main(String[] args) {
+		Mobilenumber m1=new Mobilenumber(987654321l,9786561111l);
+		Person p1=new Person("name1",m1,564512348910l);
+		//System.out.println(p);
+		System.out.println(p1);
+		System.out.println(m1);
+	}
+
+}

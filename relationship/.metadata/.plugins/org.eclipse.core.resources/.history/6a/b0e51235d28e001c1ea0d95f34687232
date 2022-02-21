@@ -1,0 +1,11 @@
+package aggregation;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	    //Address a=new Address();
+       Student s=new Student(111,"ganesh",98,8.9f,"vaddeswaram","AP","IN",522502);
+       System.out.println(s);
+	}
+
+}

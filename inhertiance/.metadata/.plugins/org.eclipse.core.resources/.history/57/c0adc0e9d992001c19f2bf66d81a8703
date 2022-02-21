@@ -1,0 +1,13 @@
+package inheritance2;
+
+public class A1 {
+	int a,b=12;
+	A1()
+	{
+		System.out.println("super class constructor");
+	}
+void CSE()
+{
+	System.out.println("this is super class method");
+}
+}

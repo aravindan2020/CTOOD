@@ -1,0 +1,12 @@
+package inheritance2;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		B1 b=new B1();
+		System.out.println(b.a=10);
+		System.out.println(b.b=12);
+
+	}
+
+}

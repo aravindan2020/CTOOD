@@ -1,0 +1,17 @@
+package inheritance2;
+
+public class B1 extends A1 {
+	int b;
+	
+	boolean MethodinB()
+	{
+		System.out.println("hi");
+		
+		return true;
+	}
+   B1()
+      {	
+      super();
+      System.out.println("this is subslass constructor");
+      }
+}

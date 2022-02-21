@@ -1,0 +1,12 @@
+package menu;
+
+public class Student 
+{
+	String name;
+	long id;
+	int tm;
+	void addStudent(String name, long id,int tm)
+	{
+		
+	}
+}
