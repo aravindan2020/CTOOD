@@ -1,0 +1,148 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Student {
+    private String name;
+    private int id;
+
+    public Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + ", Name: " + name;
+    }
+}
+
+public class StudentManagement {
+    ArrayList<Student> students;
+    Scanner scanner;
+
+    public StudentManagement() {
+        students = new ArrayList<>();
+        scanner = new Scanner(System.in);
+    }
+
+    public void run() {
+        int choice;
+
+        do {
+            System.out.println("\nStudent Management System");
+            System.out.println("1. Add Student");
+            System.out.println("2. Delete Student");
+            System.out.println("3. Display Students");
+            System.out.println("4. Search Student by ID");
+            System.out.println("5. Search Student by Name");
+            System.out.println("6. Exit");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    addStudent();
+                    break;
+                case 2:
+                    deleteStudent();
+                    break;
+                case 3:
+                    displayStudents();
+                    break;
+                case 4:
+                    searchStudentByID();
+                    break;
+                case 5:
+                    searchStudentByName();
+                    break;
+                case 6:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter a valid option.");
+            }
+        } while (choice != 6);
+
+        scanner.close();
+    }
+
+    private void addStudent() {
+        System.out.println("Enter student name:");
+        String name = scanner.next();
+        System.out.println("Enter student ID:");
+        int id = scanner.nextInt();
+        students.add(new Student(name, id));
+        System.out.println("Student added successfully!");
+    }
+
+    private void deleteStudent() {
+        System.out.println("Enter student ID to delete:");
+        int idToDelete = scanner.nextInt();
+        boolean found = false;
+        for (Student student : students) {
+            if (student.getId() == idToDelete) {
+                students.remove(student);
+                found = true;
+                System.out.println("Student deleted successfully!");
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Student not found.");
+        }
+    }
+
+    private void displayStudents() {
+        System.out.println("Students:");
+        for (Student student : students) {
+            System.out.println(student);
+        }
+    }
+
+    private void searchStudentByID() {
+        System.out.println("Enter student ID to search:");
+        int idToSearch = scanner.nextInt();
+        boolean found = false;
+        for (Student student : students) {
+            if (student.getId() == idToSearch) {
+                System.out.println("Student found:");
+                System.out.println(student);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Student not found.");
+        }
+    }
+
+    private void searchStudentByName() {
+        System.out.println("Enter student name to search:");
+        String nameToSearch = scanner.next();
+        boolean found = false;
+        for (Student student : students) {
+            if (student.getName().equals(nameToSearch)) {
+                System.out.println("Student found:");
+                System.out.println(student);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Student not found.");
+        }
+    }
+
+    public static void main(String[] args) {
+        StudentManagement studentManagement = new StudentManagement();
+        studentManagement.run();
+    }
+}
