@@ -1,28 +1,15 @@
+package Array1;
 
-public class IPL {//super class
-	float points,nrr;
-	String oc,pc;
-	public IPL(float points, float nrr, String oc, String pc) {
-		this.points = points;
-		this.nrr = nrr;
-		this.oc = oc;
-		this.pc = pc;
+public class IPL {
+
+	public static void main(String[] args) {
+		
+		Cricketplayer c=new Bowler("bhuvi",40,200);
+		Cricketplayer c1=new Batsman("klassen",39,1800);
+		c.info();
+		c1.info();
+		// TODO Auto-generated method stub
+
 	}
-	void thridumpire()
-	{
-		System.out.println("represented IPL board");
-	}
-	void display()
-	{
-		System.out.println("policy");
-	}
-	
-	@Override
-	public String toString() {
-		return "IPL [points=" + points + ", nrr=" + nrr + ", oc=" + oc + ", pc=" + pc + "]";
-	}
-	
-	
-	
 
 }
