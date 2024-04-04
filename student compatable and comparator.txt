@@ -1,0 +1,61 @@
+import java.util.*;
+
+// Student class
+class Student implements Comparable<Student> {
+    private String name;
+    private int id;
+
+    public Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public int compareTo(Student otherStudent) {
+        return this.name.compareTo(otherStudent.getName());
+    }
+
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", id=" + id + "]";
+    }
+}
+
+// Comparator for sorting by ID
+class IDComparator implements Comparator<Student> {
+    @Override
+    public int compare(Student s1, Student s2) {
+        return s1.getId() - s2.getId();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("John", 3));
+        studentList.add(new Student("Alice", 1));
+        studentList.add(new Student("Bob", 2));
+
+        // Using Comparable (sorting by name)
+        Collections.sort(studentList);
+        System.out.println("Sorted by Name (using Comparable):");
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
+
+        // Using Comparator (sorting by ID)
+        Collections.sort(studentList, new IDComparator());
+        System.out.println("\nSorted by ID (using Comparator):");
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
+    }
+}
